@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vikash Kumar Pandey Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="brand">
+    <div class="logo">V</div>
+    <div class="meta">
+      <div class="name">Vikash Kumar Pandey</div>
+      <div class="role">Junior Cybersecurity • Frontend • Data Analyst</div>
+    </div>
+  </div>
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact" class="cta">Contact</a>
+    <button id="themeToggle" class="icon">🌓</button>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <h1 class="title">Hi, I am <span class="accent">Vikash</span></h1>
+    <p class="lead">Junior Cybersecurity, Frontend & Data Analyst. I build secure and user-friendly web experiences.</p>
+  </div>
+  <div class="hero-right hero-card">
+    <img src="vikashpic.jpeg" alt="Vikash Kumar Pandey">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="panel">
+  <h2>About Me</h2>
+  <div class="split">
+    <div class="card">
+      <p>I am pursuing BCA 3rd year at Swami Vivekanand Subharti University, Meerut. I specialize in Cybersecurity and Web Development. My projects focus on secure, practical solutions.</p>
+    </div>
+    <div class="card">
+      <ul class="tags">
+        <li>Junior Cybersecurity</li>
+        <li>Frontend Development</li>
+        <li>Data Analysis</li>
+        <li>Cloud Computing</li>
+        <li>Web Security</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="panel">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill">
+      <div>Cybersecurity</div>
+      <div class="bar"><span style="--v:75%"></span></div>
+    </div>
+    <div class="skill">
+      <div>Frontend (HTML/CSS/JS)</div>
+      <div class="bar"><span style="--v:80%"></span></div>
+    </div>
+    <div class="skill">
+      <div>React Basics</div>
+      <div class="bar"><span style="--v:60%"></span></div>
+    </div>
+    <div class="skill">
+      <div>Python & Data</div>
+      <div class="bar"><span style="--v:65%"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="panel">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="proj">
+      <div class="proj-head"><strong>Password Generator</strong><span class="chip">Frontend</span></div>
+      <p>Generates secure passwords for users. Simple & fast UI.</p>
+    </div>
+    <div class="proj">
+      <div class="proj-head"><strong>College Event Calendar</strong><span class="chip">Frontend</span></div>
+      <p>Create and manage college events with validation.</p>
+    </div>
+    <div class="proj">
+      <div class="proj-head"><strong>User Authentication System</strong><span class="chip">Cybersecurity</span></div>
+      <p>Java project with hashed passwords and role checks.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="panel">
+  <h2>Certificates</h2>
+  <div class="certs">
+    <div class="cert-card"><img src=" vikash1.jpeg" data-full=" vikash1.jpeg" alt="Certificate 1"></div>
+    <div class="cert-card"><img src=" vikash2.jpeg" data-full=" vikash2.jpeg" alt="Certificate 2"></div>
+    <div class="cert-card"><img src=" vikash3.jpeg" data-full="vikash3.jpeg" alt="Certificate 3"></div>
+    <div class="cert-card"><img src=" vikash4.jpeg" data-full="vikash4.jpeg" alt="Certificate 4"></div>
+    <div class="cert-card"><img src=" vikash5.jpeg" data-full="vikash5.jpeg" alt="Certificate 5"></div>
+    <div class="cert-card"><img src=" vikash6.jpeg" data-full="vikash6.jpeg" alt="Certificate 6"></div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <img id="lbImage" src="" alt="Certificate">
+  <button id="lbClose">×</button>
+</div>
+
+<!-- CONTACT -->
+<section id="contact" class="panel">
+  <h2>Contact Me</h2>
+  <div class="contact-wrap">
+    <form id="contactForm" class="contact-form">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+  <button type="submit">Send Message</button>
+  <div id="formMsg"></div>
+</form>
+    <div class="contact-info">
+      <p>Email: pandvikash46@gmail.com</p>
+      <p>Phone: +91 9110989610</p>
+      <p>Location: Varanasi, India</p>
+    </div>
+  </div>
+</section>
+
+<!-- CHATBOT -->
+<div class="assistant">
+  <button id="assistantToggle" class="assistant-toggle">💬</button>
+  <div id="assistantWindow" class="assistant-window">
+    <div class="assistant-head">
+      <div>Vikash Assistant</div>
+      <button id="assistantClose">×</button>
+    </div>
+    <div id="assistantMessages" class="assistant-messages"></div>
+    <div class="assistant-input">
+      <input type="text" id="assistantInput" placeholder="Type your message...">
+      <button id="assistantSend">Send</button>
+      <button id="voiceBtn">🎤</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
